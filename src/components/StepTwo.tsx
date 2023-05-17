@@ -17,6 +17,8 @@ const StepTwo = ({ country, phone, update }: UserWithFunction) => {
           autoFocus
           required
           type="text"
+          pattern="[A-Za-zÀ-ÖØ-öø-ÿ-]+"
+          title="Please enter a valid Country"
           className="rounded-md border-2 border-solid border-slate-400 mb-4 h-10"
         />
         <label className="text-xl">Phone</label>
@@ -26,6 +28,8 @@ const StepTwo = ({ country, phone, update }: UserWithFunction) => {
           autoFocus
           required
           type="number"
+          pattern="/^\d{1,20}$/"
+          title="Please enter a number with the max of 20"
           className="rounded-md border-2 border-solid border-slate-400 mb-4 h-10"
         />
       </div>

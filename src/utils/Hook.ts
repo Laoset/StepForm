@@ -28,6 +28,7 @@ export function useMultipleSteps(steps: ReactElement[]) {
     step: steps[indexStep],
     goTo,
     steps,
+    isLastStep: indexStep === steps.length - 1,
     next,
     back,
   };

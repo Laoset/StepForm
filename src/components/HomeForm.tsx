@@ -8,7 +8,7 @@ type UserWithFunction = UserData & {
 };
 const HomeForm = ({ name, lastName, birthdate, update }: UserWithFunction) => {
   return (
-    <div className="flex flex-col gap-20 w-full h-full rounded-lg px-8 py-4">
+    <div className="flex flex-col gap-20 w-full h-full rounded-lg px-8 py-4 text-[#080713]">
       <h1 className="font-semibold text-3xl mt-4">Create your account</h1>
       <div className="flex flex-col">
         <label className="text-xl">Name</label>
@@ -18,6 +18,8 @@ const HomeForm = ({ name, lastName, birthdate, update }: UserWithFunction) => {
           required
           autoFocus
           type="text"
+          pattern="[A-Za-zÀ-ÖØ-öø-ÿ-]+"
+          title="Please enter a valid name"
           className="rounded-md border-2 border-solid border-slate-400 mb-4 h-10"
         />
         <label className="text-xl">Last Name</label>
@@ -26,6 +28,8 @@ const HomeForm = ({ name, lastName, birthdate, update }: UserWithFunction) => {
           value={lastName}
           required
           type="text"
+          pattern="[A-Za-zÀ-ÖØ-öø-ÿ-]+"
+          title="Please enter a valid last name"
           className="rounded-md border-2 border-solid border-slate-400 mb-4 h-10"
         />
         <label className="text-xl">Date of birth</label>
