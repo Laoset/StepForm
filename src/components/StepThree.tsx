@@ -8,7 +8,7 @@ type UserWithFunction = userFormFour & {
 const StepFour = ({ instagram, linkedin, update }: UserWithFunction) => {
   return (
     <div className="flex flex-col gap-20 w-full h-full rounded-lg px-8 py-4">
-      <h1 className="font-semibold text-3xl mt-4">Social medias</h1>
+      <h1 className="font-semibold lg:text-3xl text-2xl mt-4">Social medias</h1>
       <div className="flex flex-col">
         <label className="text-xl">Instagram</label>
         <input

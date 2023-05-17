@@ -57,7 +57,7 @@ function App() {
   }
   return (
     <main className="flex flex-col h-screen w-screen justify-center items-center">
-      <section className="bg-white flex justify-around flex-col w-[32rem] h-[35rem] rounded-xl shadow-2xl ">
+      <section className="w-[20rem] h-[31rem] bg-white flex justify-around flex-col lg:w-[32rem] lg:h-[35rem] rounded-xl shadow-2xl mb-4 lg:mb-10">
         <header className="flex flex-row justify-start px-8 py-1">
           <p className="text-lg font-normal">
             Step {indexStep + 1} of {steps.length}
@@ -69,26 +69,26 @@ function App() {
         >
           {step}
           {openModal ? <ModalFinal /> : null}
-          <div className="w-full h-[20%] flex flex-row justify-end align-middle text-center items-center gap-4 p-6">
+          <div className="w-full flex flex-row justify-center lg:justify-end align-middle text-center items-center p-2 gap-1 lg:gap-4 lg:p-6">
             {indexStep !== 0 && (
               <button
                 type="button"
                 onClick={back}
-                className="bg-[#6247b8] px-14 h-10  rounded-xl text-white"
+                className="bg-[#6247b8] px-10 h-8  lg:px-14 lg:h-10  rounded-xl text-white"
               >
                 Back
               </button>
             )}
             <button
               type="submit"
-              className="bg-[#6247b8] px-20 h-12 rounded-xl text-white"
+              className="bg-[#6247b8] px-10 h-8 lg:px-20 lg:h-12 rounded-xl text-white"
             >
               {isLastStep ? "Finish" : "Next"}
             </button>
           </div>
         </form>
       </section>
-      <footer className="flex flex-col gap-1 mb-4 absolute bottom-0">
+      <footer className="flex flex-col gap-1 py-2 absolute bottom-0">
         <p>Made with ❣️ by Kevin Corman </p>
         <div className="flex flex-row gap-6 items-center justify-center ">
           <a

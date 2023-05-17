@@ -9,7 +9,9 @@ type UserWithFunction = UserData & {
 const HomeForm = ({ name, lastName, birthdate, update }: UserWithFunction) => {
   return (
     <div className="flex flex-col gap-20 w-full h-full rounded-lg px-8 py-4 text-[#080713]">
-      <h1 className="font-semibold text-3xl mt-4">Create your account</h1>
+      <h1 className="font-semibold lg:text-3xl text-2xl mt-4">
+        Create your account
+      </h1>
       <div className="flex flex-col">
         <label className="text-xl">Name</label>
         <input
