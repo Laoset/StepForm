@@ -21,7 +21,7 @@ const StepThree = ({ password, email, update }: UserWithFunction) => {
         <div className="flex flex-row justify-between">
           <label className="text-xl">Password</label>
           <span onClick={handleShowPass}>
-            {pass ? (
+            {!pass ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
