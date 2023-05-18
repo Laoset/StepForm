@@ -17,7 +17,7 @@ const StepTwo = ({ country, phone, update }: UserWithFunction) => {
           autoFocus
           required
           type="text"
-          pattern="[A-Za-zÀ-ÖØ-öø-ÿ-]+"
+          pattern="[A-Za-z]+"
           title="Please enter a valid Country"
           className="rounded-md border-2 border-solid border-slate-400 mb-4 h-10"
         />

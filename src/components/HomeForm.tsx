@@ -20,7 +20,7 @@ const HomeForm = ({ name, lastName, birthdate, update }: UserWithFunction) => {
           required
           autoFocus
           type="text"
-          pattern="[A-Za-zÀ-ÖØ-öø-ÿ-]+"
+          pattern="[A-Za-z]+"
           title="Please enter a valid name"
           className="rounded-md border-2 border-solid border-slate-400 mb-4 h-10"
         />
@@ -30,7 +30,7 @@ const HomeForm = ({ name, lastName, birthdate, update }: UserWithFunction) => {
           value={lastName}
           required
           type="text"
-          pattern="[A-Za-zÀ-ÖØ-öø-ÿ-]+"
+          pattern="[A-Za-z]+"
           title="Please enter a valid last name"
           className="rounded-md border-2 border-solid border-slate-400 mb-4 h-10"
         />
